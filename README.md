@@ -33,6 +33,8 @@ The dataset contained transactional and operational e-commerce data across multi
 |payments |	payment records and methods |
 |reviews |	customer review ratings |
 
+The analysis focused primarily on 2023–2024 business performance.
+
 ---
 
 ## Data Cleaning & Validation
@@ -45,17 +47,37 @@ Several NULL values were identified in:
 - payment amounts
 - line_total
 - delivery_date
-  ### Actions Taken
+  #### Actions Taken
 - payment amounts were updated using matching order totals where appropriate
 - missing revenue-related values were handled using COALESCE() during aggregation
 - undelivered orders with NULL delivery dates were preserved rather than removed
-View the exact SQL used here: 
-
+ 
+### Duplicate Checks:
+Duplicate validation was performed across:
+- customers
+- sellers
+- orders
   
-Duplicate Checks
-total_amount
-payment amounts
-line_total
-delivery_date
+No major duplicate records were identified after inspection.
 
-The analysis focused primarily on 2023–2024 business performance.
+### Inconsistent Formatting:
+Several inconsistencies were found including:
+- “Lago S”
+- “Port-Harcourt”
+- “Electronis”
+- “Fashon”
+  
+### Standardization:
+- city names were standardized using INITCAP() and manual correction
+- category names were normalized into consistent formats
+- date fields were validated for consistency
+
+### Data Validation:
+Additional validation checks included:
+- verifying order totals against line-item totals
+- validating review ratings between 1–5
+- checking for invalid product prices
+- identifying incomplete transactions
+
+Click here to view full cleaning process:
+[View part 1 SQL cleaning script](./part_1.sql)
