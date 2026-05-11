@@ -38,11 +38,21 @@ The dataset contained transactional and operational e-commerce data across multi
 ## Data Cleaning & Validation
 Before analysis, the dataset required extensive cleaning and validation to improve reliability and consistency.
 
-Missing Values
-
+### Missing Values
 Several NULL values were identified in:
+- unit_price
+- total_amount
+- payment amounts
+- line_total
+- delivery_date
+  ### Actions Taken
+- payment amounts were updated using matching order totals where appropriate
+- missing revenue-related values were handled using COALESCE() during aggregation
+- undelivered orders with NULL delivery dates were preserved rather than removed
+View the exact SQL used here: 
 
-unit_price
+  
+Duplicate Checks
 total_amount
 payment amounts
 line_total
