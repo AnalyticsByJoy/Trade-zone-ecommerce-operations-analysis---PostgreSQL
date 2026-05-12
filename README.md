@@ -125,3 +125,8 @@ This ensured the dataset was more reliable for operational and business-focused 
 
 Click here to view full cleaning process:
 [Part 1.sql](Part%201.sql)
+
+---
+## Business Questions & Key Findings
+### Q1: Customer Acquisition & 30-Day Conversion
+Identified the top-performing states by customer signups and measured how many converted into paying customers within 30 days.
