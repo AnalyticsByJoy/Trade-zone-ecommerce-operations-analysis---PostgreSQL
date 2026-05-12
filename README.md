@@ -25,17 +25,40 @@ The dataset contained transactional and operational e-commerce data across multi
 
 | Table | Description |
 |-------|--------------|
-|customers | customer demographic and registration information |
-|sellers |	seller information and locations |
-|products |	product details and pricing |
-|orders |	transactional order information |
-|order_items |	individual line-item purchases |
-|payments |	payment records and methods |
-|reviews |	customer review ratings |
+| customers | customer demographic and registration information |
+| sellers |	seller information and locations |
+| products |	product details and pricing |
+| orders |	transactional order information |
+| order_items |	individual line-item purchases |
+| payments |	payment records and methods |
+| reviews |	customer review ratings |
 
-The analysis focused primarily on 2023–2024 business performance.
+## Entity Relationships
+'''
+Customers ─────< Orders >───── Sellers
+                     │
+                     │
+                     ▼
+               Order_Items
+                 ▲      ▲
+                 │      │
+             Products   │
+                        │
+          Orders ─────< Payments
+          Orders ─────< Reviews
+'''
 
----
+
+| Relationship | Description |
+|--------------|-------------|
+| customers → orders | One customer can place multiple orders|
+| sellers → orders | One seller can fulfil multiple orders |
+| orders → order_items | One order can contain multiple products |
+| products → order_items | Products can appear across multiple orders |
+| orders → payments | Orders are linked to payment transactions |
+| orders → reviews | Customers can review completed orders |
+
+
 
 ## Data Cleaning & Validation
 Before analysis, the dataset required extensive cleaning and validation to improve reliability and consistency.
@@ -80,4 +103,4 @@ Additional validation checks included:
 - identifying incomplete transactions
 
 Click here to view full cleaning process:
-[View part 1 SQL cleaning script](./part_1.sql)
+[part 1.sql](part%201.sql)
