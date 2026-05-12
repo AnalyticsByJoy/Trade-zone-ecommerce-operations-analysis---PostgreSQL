@@ -64,43 +64,64 @@ Customers ─────< Orders >───── Sellers
 Before analysis, the dataset required extensive cleaning and validation to improve reliability and consistency.
 
 ### Missing Values
-Several NULL values were identified in:
-- unit_price
-- total_amount
-- payment amounts
-- line_total
-- delivery_date
+NULL values were identified in several important fields across:
+- products.unit_price
+- orders.total_amount
+- orders.delivery_date
+- order_items.unit_price
+- order_items.line_total
+- payments.amount
   #### Actions Taken
-- payment amounts were updated using matching order totals where appropriate
-- missing revenue-related values were handled using COALESCE() during aggregation
-- undelivered orders with NULL delivery dates were preserved rather than removed
- 
-### Duplicate Checks:
-Duplicate validation was performed across:
+- Missing payment amounts were updated using corresponding order totals where appropriate.
+- total_amount values in orders were reconciled against the sum of line item totals.
+- NULL delivery dates were preserved because they represented undelivered or incomplete orders.
+- Revenue calculations used COALESCE() where necessary to avoid aggregation errors.
+- NULL product prices were flagged and excluded from sensitive revenue analysis instead of being deleted.
+
+### Duplicate Validation:
+Duplicate checks were performed across:
 - customers
 - sellers
 - orders
-  
-No major duplicate records were identified after inspection.
+#### Actions Taken
+- Duplicate validation queries were executed using primary identifiers.
+- No major duplicate records were identified during inspection.
+- Existing records were preserved to maintain transactional completeness.
 
-### Inconsistent Formatting:
-Several inconsistencies were found including:
-- “Lago S”
-- “Port-Harcourt”
-- “Electronis”
-- “Fashon”
-  
-### Standardization:
-- city names were standardized using INITCAP() and manual correction
-- category names were normalized into consistent formats
-- date fields were validated for consistency
+### Standardization & Formatting:
+Several formatting inconsistencies were identified in:
+- city names
+- product categories
+- text casing
+
+Examples included:
+- Lago S
+- Port-Harcourt
+- Electronis
+- Fashon
+#### Actions Taken
+- City names were standardized using INITCAP() and manual corrections.
+- Product categories were normalized into consistent naming formats.
+- Text fields were trimmed to remove excess spaces.
+- Date fields were validated to ensure consistent formatting across tables.
 
 ### Data Validation:
-Additional validation checks included:
-- verifying order totals against line-item totals
-- validating review ratings between 1–5
-- checking for invalid product prices
-- identifying incomplete transactions
+Validation checks were performed to ensure transactional consistency and business reliability.
+#### Actions Taken
+- Order totals were validated against summed line item totals.
+- Review ratings were checked to confirm values remained between 1 and 5.
+- Product prices were reviewed for invalid negative values.
+- Discount percentages were checked for values exceeding 100%.
+- Incomplete or inconsistent transactions were flagged for awareness during analysis.
+
+### Cleaning Outcome
+The cleaning process improved:
+- revenue consistency
+- category aggregation accuracy
+- regional reporting reliability
+- transactional validation confidence
+
+This ensured the dataset was more reliable for operational and business-focused SQL analysis.
 
 Click here to view full cleaning process:
-[part 1.sql](part%201.sql)
+[Part 1.sql](Part%201.sql)
