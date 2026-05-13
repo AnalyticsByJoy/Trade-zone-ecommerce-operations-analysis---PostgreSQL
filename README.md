@@ -188,7 +188,7 @@ Measured average fulfilment time and compared seller operational efficiency agai
 |VogueNG|27|126.22|4.18|
 |QuickTech NG|24|129.00|3.69|
 
-### Key Finding
+#### Key Finding
 Faster delivery times showed weak correlation with customer satisfaction scores.
 
 View the SQL script [Q3.sql](Q3.sql)
@@ -204,6 +204,7 @@ Segmented customers into:
 - High Spenders
 - Medium Spenders
 - Low Spenders
+  
 | Segment | Customer count | Avg spend per customer | Total revenue |
 | ------- | -------------- | ---------------------- | ------------- | 
 |High Spenders|418|₦996,285|₦416,447,403|
