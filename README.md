@@ -140,4 +140,25 @@ Identified the top-performing states by customer signups and measured how many c
 
 #### Key Finding:
 Lagos recorded both the highest acquisition and conversion rates, while states like Kano and Oyo struggled with conversion despite strong signup numbers.
-View the SQL script [Part 2.sql](Part%201.sql)
+
+View the SQL script [Q1.sql](Q1.sql)
+
+### Q2: Product Performance
+Analyzed the top 10 revenue-generating products in 2024.
+| Product name | Category | Total revenue | Total number of orders |
+| ------------ | -------- | ------------- | ---------------------- | 
+| HP Pavilion 15 Laptop Intel i5 - v2 |	Electronics |	₦26,702,504.36 |	25 |
+| Mechanical Keyboard RGB Backlit |	Electronics |	₦25,124,824.10	| 24 |
+| TP-Link WiFi Router AC1200 - v2 |	Electronics |	₦23,727,475.50 |	24 |
+| Hisense 32 inch LED TV |	Electronics |	₦23,597,927.50	| 26 |
+| Apple AirPods Pro 2nd Gen |	Electronics |	₦21,681,843.09 |	25 |
+| JBL Bluetooth Speaker Portable |	Electronics | ₦20,388,232.26 |	22 |
+| Kingston 256GB USB Flash Drive - v2 |	Electronics |	₦19,165,030.56 |	21 |
+| Garmin Forerunner 255 Watch - v2 |	Electronics |	₦18,470,211.35 |	29 |
+| Lenovo IdeaPad 3 Laptop 8GB RAM - v2 |	Electronics |	₦18,182,471.45 |	20 |
+| Anker PowerBank 20000mAh USB-C |	Electronics | ₦17,729,180.30 |	19 |
+
+#### Key Finding:
+Electronics dominated platform revenue, revealing strong dependence on a single product category.
+
+View the SQL script [Q2.sql](Q2.sql)
