@@ -11,6 +11,7 @@ FROM latest_customers lc
 JOIN orders o
 ON lc.customer_id = o.customer_id
 WHERE o.order_date <= lc.signup_date + INTERVAL '30 days'
+AND o.order_status != 'Cancelled'
 )
 SELECT lc.state, 
 COUNT (lc.customer_id) AS total_registrations, 
