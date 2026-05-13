@@ -140,4 +140,4 @@ Identified the top-performing states by customer signups and measured how many c
 
 #### Key Finding:
 Lagos recorded both the highest acquisition and conversion rates, while states like Kano and Oyo struggled with conversion despite strong signup numbers.
-
+View the SQL script [Part 2.sql](Part%201.sql)
