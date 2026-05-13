@@ -34,7 +34,7 @@ The dataset contained transactional and operational e-commerce data across multi
 | reviews |	customer review ratings |
 
 ## Entity Relationships
-'''
+```
 Customers ─────< Orders >───── Sellers
                      │
                      │
@@ -46,7 +46,7 @@ Customers ─────< Orders >───── Sellers
                         │
           Orders ─────< Payments
           Orders ─────< Reviews
-'''
+```
 
 
 | Relationship | Description |
@@ -129,4 +129,15 @@ Click here to view full cleaning process:
 ---
 ## Business Questions & Key Findings
 ### Q1: Customer Acquisition & 30-Day Conversion
-Identified the top-performing states by customer signups and measured how many converted into paying customers within 30 days.
+Identified the top-performing states by customer signups and measured how many converted into paying customers within 30 days:
+| State | Total registrations | Converted customers | Conversion Rate |
+| ----- | ------------------- | ------------------- | --------------- | 
+| Lagos | 146	| 69	| 47.26 |
+| FCT | 92	 | 37	| 40.22 |
+| Rivers | 66 |	25 |	37.88 |
+| Oyo | 63	| 19	| 30.16 |
+| Kano | 58 |	18 |	31.03 |
+
+#### Key Finding:
+Lagos recorded both the highest acquisition and conversion rates, while states like Kano and Oyo struggled with conversion despite strong signup numbers.
+
