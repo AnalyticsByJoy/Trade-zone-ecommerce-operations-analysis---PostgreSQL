@@ -259,7 +259,7 @@ Identified sellers meeting operational and customer satisfaction thresholds for 
 |CozyHome NG|15|4.0|₦5,538,087|
 |CleanHome NG|15|4.2|₦5,500,122|
 
-### Key Finding
+#### Key Finding
 Some sellers balanced both strong revenue and high customer ratings, making them ideal candidates for reward programs.
 
 View the SQL script [Q8.sql](Q8.sql)
