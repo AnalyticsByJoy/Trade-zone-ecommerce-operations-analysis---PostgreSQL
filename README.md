@@ -198,9 +198,21 @@ View the SQL script [Q3.sql](Q3.sql)
 ---
 ### Q4:Quarterly Revenue Trends
 Compared quarterly revenue performance across 2023 and 2024.
+| Year | Quarter | Total revenue | Avg order value | Total orders |
+| ---- | ------- | ------------- | --------------- | ------------ | 
+|2023|1|₦1,000,180|₦166,696|6|
+|2023|2|₦11,535,442|₦339,277|34|
+|2023|3|₦25,968,632|₦346,248|76|
+|2023|4|₦40,116,611|₦334,305|120|
+|2024|1|₦56,545,465|₦340,635|167|
+|2024|2|₦76,718,949|₦296,212|261|
+|2024|3|₦117,542,401|₦347,758|343|
+|2024|4|₦171,181,536|₦344,429|498|
 
 #### Key Finding
-Q4 recorded the strongest revenue growth, indicating seasonal demand patterns.
+Q4 in both 2023 and 2024 recorded the strongest revenue growth, but Q4 in 2024 is the platform's peak period by both total revenue and orders indicating seasonal demand patterns.
+
+View the SQL script [Q4.sql](Q4.sql)
 
 ---
 ### Q5:Customer Spend Segmentation
