@@ -143,6 +143,7 @@ Lagos recorded both the highest acquisition and conversion rates, while states l
 
 View the SQL script [Q1.sql](Q1.sql)
 
+---
 ### Q2: Product Performance
 Analyzed the top 10 revenue-generating products in 2024.
 | Product name | Category | Total revenue | Total number of orders |
@@ -163,6 +164,7 @@ Electronics dominated platform revenue, revealing strong dependence on a single 
 
 View the SQL script [Q2.sql](Q2.sql)
 
+---
 ### Q3:Seller Fulfilment Efficiency
 Measured average fulfilment time and compared seller operational efficiency against customer ratings.
 | Seller name | Total orders | Avg fulfillment hours | Avg rating |
@@ -193,12 +195,14 @@ Faster delivery times showed weak correlation with customer satisfaction scores.
 
 View the SQL script [Q3.sql](Q3.sql)
 
+---
 ### Q4:Quarterly Revenue Trends
 Compared quarterly revenue performance across 2023 and 2024.
 
 #### Key Finding
 Q4 recorded the strongest revenue growth, indicating seasonal demand patterns.
 
+---
 ### Q5:Customer Spend Segmentation
 Segmented customers into:
 - High Spenders
@@ -216,6 +220,7 @@ Revenue was heavily concentrated among high-spending customers, creating custome
 
 View the SQL script [Q5.sql](Q5.sql)
 
+---
 ### Q6:Payment Preferences by State
 Analyzed regional payment behavior across Nigerian states.
 | State | Most preferred payment method | Transactions count |
@@ -231,6 +236,7 @@ Urban states favored digital payments, while some regions remained highly depend
 
 View the SQL script [Q6.sql](Q6.sql)
 
+---
 ### Q7:Review Ratings vs Sales Performance
 Grouped products by average ratings and analyzed financial performance.
 | Rating category | Product count | Total revenue | Avg unit price |
@@ -244,6 +250,7 @@ Mid-rated products unexpectedly generated the highest revenue.
 
 View the SQL script [Q7.sql](Q7.sql)
 
+---
 ### Q8:Seller Bonus Qualification
 Identified sellers meeting operational and customer satisfaction thresholds for performance incentives.
 | Seller name | Total orders | Avg rating | total revenue |
@@ -263,3 +270,5 @@ Identified sellers meeting operational and customer satisfaction thresholds for 
 Some sellers balanced both strong revenue and high customer ratings, making them ideal candidates for reward programs.
 
 View the SQL script [Q8.sql](Q8.sql)
+
+---
