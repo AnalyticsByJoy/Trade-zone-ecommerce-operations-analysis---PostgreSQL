@@ -373,4 +373,4 @@ Or import manually through pgAdmin using:
 #### 4. Run SQL Analysis Files
 Execute the SQL scripts individually.
 
-Click here to view analyst memo [ANALYTIC REPORT-ANALYST MEMO (1).pdf](ANALYTIC.REPORT.ANALYST.MEMO.(1)pdf)
+Click here to view analyst memo [ANALYTIC REPORT-ANALYST MEMO (1).pdf](ANALYTIC%20REPORT-ANALYST%20MEMO%20(1).pdf)
