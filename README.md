@@ -284,3 +284,93 @@ Some sellers balanced both strong revenue and high customer ratings, making them
 View the SQL script [Q8.sql](Q8.sql)
 
 ---
+
+## Key Business Findings
+### 1. Revenue is heavily dependent on high spenders
+(Q5 — Customer Spend Segmentation)
+
+The analysis showed that high spenders generated the majority of TradeZone’s 2024 revenue, contributing over ₦416 million. Meanwhile, medium and low spenders contributed far less in comparison.
+
+This suggests that the platform currently relies heavily on a small group of valuable customers. While this is good for revenue, it also creates a risk because losing those customers could significantly affect overall performance.
+
+### 2. Some states attract customers but struggle with conversion
+(Q1 — Customer Acquisition & 30-Day Conversion, Q6 — Payment Preferences)
+
+Lagos recorded both strong customer sign-ups and high conversion rates, making it the platform’s strongest growth market. However, states like Oyo and Kano had decent sign-up numbers but lower conversion rates.
+
+The analysis also showed that these states relied more on cash-on-delivery payments, which may point to trust or payment adoption issues affecting customer purchases.
+
+### 3. Faster delivery does not automatically mean better ratings
+(Q3 — Seller Fulfilment Efficiency, Q7 — Review Ratings & Sales Performance)
+
+Most sellers operated within similar fulfilment times, showing that delivery speed across the platform is fairly consistent.
+
+However, faster sellers did not always receive better customer ratings. In addition, some mid-rated products generated higher revenue than highly rated products, suggesting that customer buying behavior is influenced by more than ratings alone.
+
+## Recommendations
+### 1. Improve customer retention and upselling
+
+The Growth Team should focus on moving low and medium spenders into higher spending categories through loyalty campaigns, personalized recommendations, and repeat purchase incentives.
+
+This could help increase customer lifetime value and reduce overdependence on a small group of high spenders within the next 60–90 days.
+
+### 2. Improve conversion strategies in low-performing states
+
+The Growth and Payment Operations teams should improve onboarding and payment trust in states with weaker conversion rates by encouraging digital payments and simplifying checkout experiences.
+
+This could improve first-time purchases, increase conversion rates, and reduce reliance on cash-on-delivery transactions over the next 60–90 days.
+
+## Tools & Skills Used
+### Technologies
+- PostgreSQL
+  
+## SQL Concepts
+- CTEs
+- JOINS
+- CASE Statements
+- Window Functions
+- Aggregations
+- Ranking Functions
+- Data Validation Queries
+  
+## Analytical Skills
+- Data Cleaning
+- Business Analysis
+- Operational Analysis
+- Customer Segmentation
+- Revenue Analysis
+- Data Validation
+
+## How to Run Locally
+### Requirements
+
+Before running this project locally, ensure the following are installed:
+- PostgreSQL
+- pgAdmin or any PostgreSQL-compatible SQL editor
+
+### Setup Instructions
+#### 1. Clone the Repository
+```
+git clone https://github.com/yourusername/TradeZone-E-Commerce-Operations-Analysis.git
+```
+#### 2. Open PostgreSQL
+Launch PostgreSQL or pgAdmin and create a new database:
+```
+CREATE DATABASE tradezone_db;
+```
+#### 3. Import the Cleaned Database Dump
+Import the provided cleaned dump file into the database.
+
+Using PostgreSQL terminal:
+```
+psql -U postgres -d tradezone_db -f cleaned_dump.sql
+```
+Or import manually through pgAdmin using:
+- Right click database
+- Restore / Query Tool
+- Select cleaned dump file
+
+#### 4. Run SQL Analysis Files
+Execute the SQL scripts individually.
+
+Click here to view analyst memo [ANALYTIC REPORT-ANALYST MEMO (1)](Q8.sql)
